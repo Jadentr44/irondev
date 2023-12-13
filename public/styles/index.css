@@ -1,0 +1,14 @@
+.blogCard:hover{
+scale: 1.05;
+}
+.blogCard{
+transition: scale .3s;
+}
+.lineMax3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
