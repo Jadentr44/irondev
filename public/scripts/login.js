@@ -17,7 +17,7 @@ loginBtn.addEventListener("click", async function () {
     username: usernameValue,
     password: passwordValue,
   };
-  console.log("loggin in");
+  // console.log("loggin in");
 
   let response = await fetch(`api/user/login`, {
     method: "POST",

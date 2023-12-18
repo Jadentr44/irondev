@@ -50,6 +50,7 @@
 },
 {
   "id": "2",
+  "author":135,
   "title": "The Evolution of Responsive Design: Adapting to a Multi-Device World",
   "imgSrc":"https://www.seguetech.com/wp-content/uploads/2013/12/segue-blog-considerations-when-planning-responsive-design.png",
   "filters":["design"],
@@ -107,6 +108,7 @@
 ,
 {
   "id": "3",
+  "author":135,
   "title": "The Art of Debugging: A Developer's Guide to Finding and Fixing Code Issues",
   "imgSrc":"https://bespoken.io/wp-content/uploads/2019/08/software-762486_1920-1024x717.jpg",
   "filters":["javascript"],
@@ -217,6 +219,7 @@
   ]
 },{
   "id": "5",
+  "author":135,
   "title": "Mastering React: Building Dynamic User Interfaces with JavaScript",
   "filters":["react","javascript"],
   "content": [

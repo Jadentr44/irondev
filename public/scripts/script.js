@@ -4,7 +4,7 @@ async function getBlogs() {
   let data = await response.json();
   if(data .length == 0) return alert("no data")
   generateBlogs(data);
-  console.log(data);
+  // console.log(data);
 }
 
 function generateBlogs(info) {

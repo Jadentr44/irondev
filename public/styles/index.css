@@ -1,6 +1,4 @@
 .blogCard:hover{
-scale: 1.05;
+background-color: #F4F4F5;
 }
-.blogCard{
-transition: scale .3s;
-}
+

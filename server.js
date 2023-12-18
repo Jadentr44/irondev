@@ -43,18 +43,21 @@ app.post("/api/user/login", (req, res) => {
   // making sure the request was sent with username and password
   if (!req.body.username || !req.body.password) return res.json("issue");
   if(req.session.authenticated) return res.json(req.session)
+  
   const {username,password} = req.body
-
-  if (users.some(user => user.username === username && user.password === password )) {
+  let foundUser = users.find(user => user.username === username && user.password === password ) 
+  
+  if(!foundUser) return res.status(204).json("no user found");
+  console.log(foundUser)
+  const {imgSrc,id} = foundUser
     req.session.authenticated = true
       req.session.user={
-        username,password
+        username,imgSrc,id
       }
      return res.status(200).json(req.session)
-  }else{
+ 
 
-    return res.status(204).json("no user found");
-  }
+  
 
   // res.status(200).json(userFound);
 });

@@ -7,10 +7,10 @@ router.get("/name/:name", (req, res) => {
   let user = users.find((e) => e.username === req.params.name);
   if(!user) return res.json("no user found");
   
-  let {username,likedPost,readList,post,bio} = user
+  let {username,likedPost,readList,post,bio,imgSrc} = user
   console.log(user);
   let data = {
-   username,likedPost,readList,post,bio
+   username,likedPost,readList,post,bio,imgSrc
   }
   return res.json(data);
 

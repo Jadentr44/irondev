@@ -1,6 +1,6 @@
 async function getProfile() {
   let username = window.location.pathname.replace("/profile/", "");
-  console.log(username);
+  // console.log(username);
   let response = await fetch("/api/user/name/" + username);
   let data = await response.json();
   console.log(data);
@@ -8,15 +8,25 @@ async function getProfile() {
 }
 function generatePage(info) {
   let postArea = document.querySelector("#postArea");
-  let nameEl = document.querySelector("#nameEl")
-  nameEl.innerText=info.username
-  let bioEl = document.querySelector("#bio")
-  bioEl.innerText= info.bio ||"no bio"
+  let nameEl = document.querySelector("#nameEl");
+  let bioEl = document.querySelector("#bio");
+  let imgEl = document.querySelector("#profileImg")
+
+  imgEl.src = info.imgSrc|| 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png'
+  // setting name of profile
+  nameEl.innerText = info.username;
+  // if there is a bio set it
+  bioEl.innerText = info.bio || "no bio";
+  // loop through all post liked with account 
   if (info.post.length > 0) {
     info.post.forEach((e) => {
       generatePostCard(e);
     });
-  }else{postArea.innerHTML='<h3 class="text-2xl font-semibold text-center">No Post :(</h3>'}
+  } else {
+    // if there are no post tell them
+    postArea.innerHTML =
+      '<h3 class="text-2xl font-semibold text-center">No Post :(</h3>';
+  }
 }
 async function generatePostCard(id) {
   let response = await fetch(`/api/blog/id/${id}`);
@@ -32,6 +42,6 @@ async function generatePostCard(id) {
   <img class="md:max-w-[20%] max-w-[30%] aspect-square object-cover w-full" src="${data.imgSrc}" alt="">
   </div></a>
   `;
-  console.log(data);
+  // console.log(data);
 }
 getProfile();
