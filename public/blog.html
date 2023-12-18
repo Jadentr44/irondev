@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles/main.css">
-  <title>Document</title>
-</head>
-<body>
-  <nav class="sticky top-0 left-0 right-0 bg-[#40555B] text-[#F9FAF9]">
-    <div class="max-w-5xl mx-auto flex justify-between items-center p-2 px-4 ">
-     <a href="/"> <h4 class="text-2xl font-light logo">IronDev</h4></a>
-      <ul class="flex gap-3 font-light text-lg font-light">
-        <li><a href="/?filter=react">React</a></li>
-        <li><a href="/?filter=javascript">Javascript</a></li>
-        <li><a href="/?filter=design">Design</a></li>
-      </ul>
-    </div>
-  </nav>
-  <main  class="max-w-3xl  mx-auto px-3">
-    <h1 class="md:text-3xl text-2xl font-bold my-4" id="title"></h1>
-    <img class="md:w-full w-4/5 mx-auto" id="img"  alt="">
-    <div id="content" class="my-4">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="sticky top-0 left-0 right-0 bg-[#40555B] text-[#F9FAF9]">
+      <div class="max-w-5xl mx-auto flex justify-between items-center p-2 px-4">
+        <a href="/"> <h4 class="text-3xl font-light">IronDev</h4></a>
+        <div class="text-lg">
+          <a class="unidentified hidden" href="/login">
+            <h3 >Login</h3>
+          </a>
+          <a id="profile" class="loggedin hidden flex gap-2 items-center" href="/profile">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="" class="h-8 rounded-full"><h3 >profile</h3>
+          </a>
+          
+        </div>
+      
+      </div>
+    </nav>
+    <main class="max-w-3xl mx-auto  bg-white rounded-lg border-2 my-12">
+      <img class="md:w-full w-4/5 mx-auto" id="img" alt="" />
+      <div class="px-5">
 
-    </div>
-  </main>
-  <script src="/blog.js"></script>
-</body>
+        <div class="flex justify-between items-center my-2">
+          <a id="authorLink" href="">
+
+            <div class="flex items-center gap-2">
+              <img id="authorImg"
+              class="h-[3rem] aspect-square rounded-full border-2 object-cover"
+              src=""
+              alt=""
+              />
+              <h1 id="authorName" class="text-2xl font-bold"></h1>
+            </div>
+          </a>
+          <button class="border-2 rounded-lg px-4 py-1 text-lg">save</button>
+        </div>
+        <h1 class="md:text-3xl text-2xl font-bold mb-4" id="title"></h1>
+        <div id="content" class="my-4"></div>
+      </div>
+    </main>
+    <script src="/scripts/blog.js"></script>
+    <script src="/scripts/userAuthed.js"></script>
+  </body>
 </html>

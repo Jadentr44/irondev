@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "author":223,
     "title": "Empowering the Web: Unleashing the Power of HTML, CSS, and JavaScript",
     "imgSrc":"https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/317006793/original/71590ad866f19a5872d87d3bda4ba5c463447018/edit-or-fix-any-html-css-javascript-code-of-your-website.jpg",
   "filters":["javascript"],
@@ -163,6 +164,7 @@
 ,
 {
   "id": "4",
+  "author":223,
   "title": "The Art of Responsive Design: Crafting User Experiences Across Devices",
   "imgSrc":"https://scholarlyoa.com/wp-content/uploads/2021/07/responsive-web-design-hughes-640x314.jpg",
   "filters":["design"],

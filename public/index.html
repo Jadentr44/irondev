@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles/index.css">
-</head>
-<body class="">
-  <nav class="sticky top-0 left-0 right-0 bg-[#40555B] text-[#F9FAF9]">
-    <div class="max-w-5xl mx-auto flex justify-between items-center p-2 px-4 ">
-     <a href="/"> <h4 class="text-2xl font-light">IronDev</h4></a>
-      <ul class="flex gap-3 font-light text-lg font-light">
-        
-        <li><a href="/?filter=react">React</a></li>
-        <li><a href="/?filter=javascript">Javascript</a></li>
-        <li><a href="/?filter=design">Design</a></li>
-        
-      </ul>
-    </div>
-  </nav>
+    <title>Document</title>
 
-  <main id="blogEl" class="max-w-5xl grid  md:grid-cols-3 grid-cols-2  mx-auto px-4 md:gap-4 gap-2 mt-12">
-   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body class="">
+    <nav class="sticky top-0 left-0 right-0 bg-[#40555B] text-[#F9FAF9]">
+      <div class="max-w-5xl mx-auto flex justify-between items-center p-2 px-4">
+        <a href="/"> <h4 class="text-3xl font-light">IronDev</h4></a>
+        <div class="text-lg">
+          <a class="unidentified hidden" href="/login">
+            <h3 >Login</h3>
+          </a>
+          <a id="profile" class="loggedin hidden flex gap-2 items-center" href="/profile">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="" class="h-8 rounded-full"><h3 >profile</h3>
+          </a>
+          
+        </div>
+      
       </div>
-  </main>
-  <script src="/script.js"></script>
-</body>
+    </nav>
+
+    <main
+      id="blogEl"
+      class="max-w-5xl grid md:grid-cols-3 grid-cols-2 mx-auto px-4 md:gap-4 gap-2 mt-12"
+    ></main>
+    <script src="scripts/userAuthed.js"></script>
+    <script src="/scripts/script.js"></script>
+  </body>
 </html>

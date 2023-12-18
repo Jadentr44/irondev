@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles/main.css" />
+
+</head>
+<body>
+  <nav style="z-index: 100;" class="sticky top-0 left-0 right-0 bg-[#40555B] text-[#F9FAF9]">
+    <div class="max-w-5xl mx-auto flex justify-between items-center p-2 px-4">
+      <a href="/"> <h4 class="text-3xl font-light">IronDev</h4></a>
+      <div class="text-lg">
+        <a class="unidentified hidden" href="/login">
+          <h3 >Login</h3>
+        </a>
+        <a id="profile" class="loggedin hidden flex gap-2 items-center" href="/profile">
+          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="" class="h-8 rounded-full"><h3 >profile</h3>
+        </a>
+        
+      </div>
+    
+    </div>
+  </nav>
+  <main class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 my-12 relative">
+
+    <div class="  p-4 w-full  px-4 bg-white border-2 rounded-lg h-fit  ">
+      <div class="flex flex-col  items-center justify-center">
+        <img class="h-[6rem] mt-[-3rem] aspect-square rounded-full border-2 object-cover" src="https://t4.ftcdn.net/jpg/02/19/63/31/360_F_219633151_BW6TD8D1EA9OqZu4JgdmeJGg4JBaiAHj.jpg" alt=""> <h1 id="nameEl" class="text-2xl font-bold">IconFloat</h1>
+      </div>
+      <p id="bio" class=" text-gray-500  my-4">A frontend developer with a passion for UI/UX, accessibility & self-development. Speaker. Blogger. Author. St-st-stutterer.</p>
+    </div>
+    <div class="py-4 md:col-span-3 bg-white rounded-lg border-2 h-fit">
+      <h1 class="text-3xl font-bold text-center ">Post</h1>
+      <div id="postArea">
+
+      </div>
+     
+    </div>
+  </main>
+  <div class="h-screen"></div>
+  <script src="/scripts/userAuthed.js"></script>
+  <script src="/scripts/profile.js"></script>
+</body>
+</html>
+<!-- <div class="border-b-[1px] py-2 flex px-4 hover:bg-gray-50 ">
+  <div class="">
+
+    <h2 class="text-2xl font-bold">Here is some filler tile</h2>
+    <p class="lineMax3 text-gray-500 font-light text-lg">In the vast and dynamic realm of web development, three foundational technologies reign supreme: HTML, CSS, and JavaScript. Together, they form the backbone of virtually every website, providing the structure, style, and interactivity that make the web the immersive and engaging experience we know today. In this blog post, we'll delve into the fundamental aspects of HTML, CSS, and JavaScript, exploring their individual roles and the powerful synergy they create when combined.</p>
+  </div>
+  <img class="max-w-[20%] aspect-square object-cover w-full" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/317006793/original/71590ad866f19a5872d87d3bda4ba5c463447018/edit-or-fix-any-html-css-javascript-code-of-your-website.jpg" alt="">
+</div> -->

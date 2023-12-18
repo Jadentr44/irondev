@@ -1,0 +1,31 @@
+[
+  {
+    "username": "john_doe123",
+    "password": "secureP@ssw0rd",
+    "likedPost": [],
+    "post": []
+  },
+  {
+    "username": "alice_smith456",
+    "password": "strongPwd789",
+    "likedPost": [],
+    "post": []
+  },
+  {
+    "username": "bob_johnson789",
+    "password": "safePass321",
+    "likedPost": [],
+    "post": []
+  },
+  {
+    "username": "iconfloat",
+    "password": "raxiva50",
+    "bio":"A frontend developer with a passion for UI/UX, accessibility & self-development. Speaker. Blogger. Author. St-st-stutterer.",
+    "imgSrc":"https://t4.ftcdn.net/jpg/02/19/63/31/360_F_219633151_BW6TD8D1EA9OqZu4JgdmeJGg4JBaiAHj.jpg",
+    "id":223,
+    "likedPost": [1,3],
+    "readList": [2],
+    "post": [1,4]
+  }
+  
+]

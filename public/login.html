@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body class="min-h-screen min-w-screen grid place-items-center p-4">
+    <div class="w-full">
+      <h1 class="text-4xl md:text-6xl font-light logo text-center mb-4">
+        IronDev
+      </h1>
+      <div
+        class="p-4 border-2 border-black rounded-lg shadow-lg max-w-lg mx-auto bg-white"
+      >
+        <h2 class="text-2xl font-bold">Sign in to your account</h2>
+        <div class="flex flex-col text-lg  my-2">
+         
+          <label for="username" class="font-semibold">Username:</label>
+          <input
+            placeholder="username"
+            type="text"
+            name="username"
+            id="username"
+            class="outline-none bg-gray-100 border-2 border-black rounded-lg p-2 mb-2"
+          />
+          <label for="password" class="font-semibold">Password:</label>
+          <input
+            placeholder="password"
+            type="password"
+            name="password"
+            id="password"
+            class="outline-none bg-gray-100 border-2 border-black rounded-lg p-2"
+          />
+        </div>
+        <p id="error" class="text-lg text-center text-red-600 invisible">hidden</p>
+        <button
+        id="loginBtn"
+          class="w-full text-xl font-semibold border-2 rounded-lg py-2 bg-[#40555B] text-[#F9FAF9]"
+        >
+          Log In
+        </button>
+    
+      </div>
+    </div>
+    <script src="/scripts/login.js"></script>
+  </body>
+</html>
