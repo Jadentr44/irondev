@@ -8,7 +8,7 @@ router.get("/name/:name", (req, res) => {
   if(!user) return res.json("no user found");
   
   let {username,likedPost,readList,post,bio,imgSrc} = user
-  console.log(user);
+  // console.log(user);
   let data = {
    username,likedPost,readList,post,bio,imgSrc
   }
@@ -17,7 +17,7 @@ router.get("/name/:name", (req, res) => {
  
 });
 router.get("/id/:id", (req, res) => {
-  console.log(req.params.id)
+  // console.log(req.params.id)
   let user = users.find((e) => e.id == req.params.id);
   if(!user) return res.json("no user found");
   

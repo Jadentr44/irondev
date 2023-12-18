@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/create.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body class="">
+    <nav class="sticky top-0 left-0 right-0 bg-[#40555B] text-[#F9FAF9]">
+      <div class="max-w-5xl mx-auto flex justify-between items-center p-2 px-4">
+        <a href="/"> <h4 class="text-3xl font-light">IronDev</h4></a>
+        <div class="text-lg">
+          <a class="unidentified hidden" href="/login">
+            <h3>Login</h3>
+          </a>
+          <a
+            id="profile"
+            class="loggedin hidden flex gap-2 items-center"
+            href="/profile"
+          >
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto">
+
+      <input class="text-5xl font-bold w-full" placeholder="Title" type="text">
+      <input class="text-xl w-full" placeholder="Cover img url(optional)" type="text">
+      <div class="flex justify-center gap-2 w-full">
+        <button id="addBtn" class="text-xl w-12 h-12 flex items-center justify-center border-2 rounded-lg">p</button>
+        <button id="addBtn" class="text-xl w-12 h-12 flex items-center justify-center border-2 rounded-lg">h1</button>
+        <button id="addBtn" class="text-xl w-12 h-12 flex items-center justify-center border-2 rounded-lg">h2</button>
+      </div>
+    </main>
+    <script src="scripts/userAuthed.js"></script>
+    <!-- <script src="/scripts/script.js"></script> -->
+  </body>
+</html>

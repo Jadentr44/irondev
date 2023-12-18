@@ -36,7 +36,15 @@ app.get("/login", (req, res) =>{
  if(req.session.authenticated || req.session.user) return res.redirect('/')
   res.sendFile(path.join(__dirname, "/public/login.html"))
 });
+app.get("/create", (req, res) =>{
+ if(!req.session.authenticated || !req.session.user) return res.redirect('/')
+  res.sendFile(path.join(__dirname, "/public/create.html"))
+});
 app.get("/profile/:username", (req, res) =>{
+  if(req.session.authenticated){
+    
+    if(req.session.user.username === req.params.username) return res.sendFile(path.join(__dirname, "/public/ownerProfile.html"))
+  }
   res.sendFile(path.join(__dirname, "/public/profile.html"))
 });
 app.post("/api/user/login", (req, res) => {
@@ -48,7 +56,7 @@ app.post("/api/user/login", (req, res) => {
   let foundUser = users.find(user => user.username === username && user.password === password ) 
   
   if(!foundUser) return res.status(204).json("no user found");
-  console.log(foundUser)
+  // console.log(foundUser)
   const {imgSrc,id} = foundUser
     req.session.authenticated = true
       req.session.user={
